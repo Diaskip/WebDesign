@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickFlicks - Movies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/Logo.ico">
+    <!-- remix icon cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+        <a href="home.html" class="logo"><i class="ri-home-2-fill"></i> QuickFlicks </a>
+        <div class="icons">
+            <form action="#" class="search-form">
+                <input type="search" placeholder="search here..." id="search-box">
+                <label for="search-box" class="ri-search-line"></label>
+            </form>
+            <div id="search-btn" class="ri-search-line"></div>
+            <div id="wish-btn"><i class="ri-heart-line" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"></i></div>
+        </div>
+    </header>
+
+    <!-- header section ends  -->
+
+    <!-- Wishlist start  -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+
+        <div class="wishlist">
+
+            <div class="offcanvas-header">
+                <h2 id="offcanvasRightLabel">My Wishlist</h2>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body">
+
+                <div class="box">
+                    <img src="image/SuVeAtes.jpg" alt="Su ve Ates">
+                    <div class="overlay">
+                        <a class="view-btn" href="SuveAtes.html"><i class="ri-eye-fill"></i></a>
+                        <a class="view-btn close-btn" href="#"><i class="ri-close-line"></i></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="image/500DaysOfSummer.jpg" alt="500DaysOfSummer">
+                    <div class="overlay">
+                        <a class="view-btn" href="500DaysofSummer.html"><i class="ri-eye-fill"></i></a>
+                        <a class="view-btn close-btn" href="#"><i class="ri-close-line"></i></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="image/TheWolfOfWallStreet.jpg" alt="Su ve Ates">
+                    <div class="overlay">
+                        <a class="view-btn" href="detail.html"><i class="ri-eye-fill"></i></a>
+                        <a class="view-btn close-btn" href="#"><i class="ri-close-line"></i></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="image/MoneyHeist.jpg" alt="500DaysOfSummer">
+                    <div class="overlay">
+                        <a class="view-btn" href="detail.html"><i class="ri-eye-fill"></i></a>
+                        <a class="view-btn close-btn" href="#"><i class="ri-close-line"></i></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="image/Kingdom.jpg" alt="Su ve Ates">
+                    <div class="overlay">
+                        <a class="view-btn" href="detail.html"><i class="ri-eye-fill"></i></a>
+                        <a class="view-btn close-btn" href="#"><i class="ri-close-line"></i></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="image/GameOfThrones.jpg" alt="500DaysOfSummer">
+                    <div class="overlay">
+                        <a class="view-btn" href="detail.html"><i class="ri-eye-fill"></i></a>
+                        <a class="view-btn close-btn" href="detail.html"><i class="ri-close-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wishlist end  -->
+
+    <!-- Category nav start -->
+
+    <div class="category-nav">
+        <nav class="navbar navbar-light">
+            <div class="container-fluid">
+                <div class="sub-nav">
+                    <a data-bs-toggle="collapse" href="#collapseAll" data-bs-parent="#accordion" aria-expanded="false"
+                        aria-controls="collapseAll">All</a>
+                    <a data-bs-toggle="collapse" href="#collapseAction" data-bs-parent="#accordion"
+                        aria-expanded="false" aria-controls="collapseAction">Action</a>
+                    <a data-bs-toggle="collapse" href="#collapseComedy" data-bs-parent="#accordion"
+                        aria-expanded="false" aria-controls="collapseComedy">Comedy</a>
+                    <a data-bs-toggle="collapse" href="#collapseDrama" data-bs-parent="#accordion" aria-expanded="false"
+                        aria-controls="collapseDrama">Drama</a>
+                    <a data-bs-toggle="collapse" href="#collapseHorror" data-bs-parent="#accordion"
+                        aria-expanded="false" aria-controls="collapseHorror">Horror</a>
+                    <a data-bs-toggle="collapse" href="#collapseRomance" data-bs-parent="#accordion"
+                        aria-expanded="false" aria-controls="collapseRomance">Romance</a>
+                    <a data-bs-toggle="collapse" href="#collapseSciFi" data-bs-parent="#accordion" aria-expanded="false"
+                        aria-controls="collapseSciFi">Sci-Fi</a>
+                    <a data-bs-toggle="collapse" href="#collapseFantasy" data-bs-parent="#accordion"
+                        aria-expanded="false" aria-controls="collapseFantasy">Fantasy</a>
+                    <a data-bs-toggle="collapse" href="#collapseThriller" data-bs-parent="#accordion"
+                        aria-expanded="false" aria-controls="collapseThriller">Thriller</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="accordion" id="accordion">
+        <div class="accordion-item">
+            <div id="collapseAll" class="accordion-collapse collapse show" aria-labelledby="headingAll"
+                data-bs-parent="#accordion">
+                <div class="accordion-body">
+
+                    <section class="movie-cards">
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/SuVeAtes.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/500DaysOfSummer.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/TheGreenMile.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/Twilight.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/Seven.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/ShutterIsland.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/TheWolfOfWallStreet.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/ArmyOfTheDead.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/MeBeforeYou.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/Titanic.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/DunePartOne.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/Deadpool&Wolverine.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/MadMaxFuryRoad.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/MissionImpossibleDeadReckoningPartOne.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/WorldWarZ.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/PussInBootsTheLastWish.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/EscapeRoom.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/Constantine.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/Journey2.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/FantasticBeastsTheSecretsOfDumbledore.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/It.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/OnYourWeedingDay.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/TheConjuring.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div id="collapseAction" class="accordion-collapse collapse" aria-labelledby="headingAction"
+                data-bs-parent="#accordion">
+                <div class="accordion-body">
+
+                    <section class="movie-cards">
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/Deadpool&Wolverine.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/MadMaxFuryRoad.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/MissionImpossibleDeadReckoningPartOne.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/WorldWarZ.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/PussInBootsTheLastWish.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/ArmyOfTheDead.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/EscapeRoom.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/Constantine.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/DunePartOne.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/Journey2.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div id="collapseComedy" class="accordion-collapse collapse" aria-labelledby="headingComedy"
+                data-bs-parent="#accordion">
+                <div class="accordion-body">
+
+                    <section class="movie-cards">
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/500DaysOfSummer.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/Deadpool&Wolverine.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/PussInBootsTheLastWish.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/TheWolfOfWallStreet.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/OnYourWeedingDay.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/Journey2.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div id="collapseDrama" class="accordion-collapse collapse" aria-labelledby="headingDrama"
+                data-bs-parent="#accordion">
+                <div class="accordion-body">
+
+                    <section class="movie-cards">
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/SuVeAtes.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/500DaysOfSummer.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/TheGreenMile.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/Twilight.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/Seven.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/ShutterIsland.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/TheWolfOfWallStreet.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/ArmyOfTheDead.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/MeBeforeYou.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/Titanic.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/DunePartOne.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div id="collapseHorror" class="accordion-collapse collapse" aria-labelledby="headingHorror"
+                data-bs-parent="#accordion">
+                <div class="accordion-body">
+
+                    <section class="movie-cards">
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/WorldWarZ.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/TheConjuring.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/It.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/ArmyOfTheDead.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/EscapeRoom.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/Constantine.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div id="collapseRomance" class="accordion-collapse collapse" aria-labelledby="headingRomance"
+                data-bs-parent="#accordion">
+                <div class="accordion-body">
+
+                    <section class="movie-cards">
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/SuVeAtes.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/500DaysOfSummer.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/Twilight.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/MeBeforeYou.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/Titanic.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/OnYourWeedingDay.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div id="collapseSciFi" class="accordion-collapse collapse" aria-labelledby="headingSciFi"
+                data-bs-parent="#accordion">
+                <div class="accordion-body">
+
+                    <section class="movie-cards">
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/Deadpool&Wolverine.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/MadMaxFuryRoad.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/WorldWarZ.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/ArmyOfTheDead.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/EscapeRoom.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/DunePartOne.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/Journey2.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div id="collapseFantasy" class="accordion-collapse collapse" aria-labelledby="headingFantasy"
+                data-bs-parent="#accordion">
+                <div class="accordion-body">
+
+                    <section class="movie-cards">
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/FantasticBeastsTheSecretsOfDumbledore.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/TheGreenMile.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/Twilight.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/PussInBootsTheLastWish.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/Constantine.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/Journey2.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div id="collapseThriller" class="accordion-collapse collapse" aria-labelledby="headingThriller"
+                data-bs-parent="#accordion">
+                <div class="accordion-body">
+
+                    <section class="movie-cards">
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/MadMaxFuryRoad.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/MissionImpossibleDeadReckoningPartOne.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/Seven.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/ShutterIsland.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/TheConjuring.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/ArmyOfTheDead.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image" data-aos="fade-left" data-aos-delay="100">
+                                <img src="image/EscapeRoom.jpg">
+                                <div class="overlay">
+                                    <a class="view-btn" href="detail.html"><i class="ri-arrow-right-s-line"></i></a>
+                                    <a class="view-btn add-btn" href="#"><i class="ri-heart-add-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Category nav end -->
+
+    <!-- footer section start  -->
+
+    <section class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3>QuickFlicks</h3>
+                <p>Thank you for visiting our website.</p>
+                <p>We appreciate your support!</p>
+                <p>Have a great day!</p>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="movies.html"> <i class="ri-arrow-right-line"></i> Movies </a>
+                <a href="series.html"> <i class="ri-arrow-right-line"></i> Series </a>
+                <a href="faq.html"> <i class="ri-arrow-right-line"></i> F.A.Q </a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="https://www.facebook.com/login"> <i class="ri-facebook-fill"></i> facebook </a>
+                <a href="https://www.instagram.com/accounts/login/"> <i class="ri-instagram-fill"></i> instagram </a>
+                <a href="https://twitter.com/login"> <i class="ri-twitter-fill"></i> twitter </a>
+                <a href="https://www.linkedin.com/login"> <i class="ri-linkedin-box-fill"></i> linkedin </a>
+            </div>
+
+            <div class="box">
+                <h3>Send Message</h3>
+                <p>You can leave some review about our website!</p>
+                <form action="#">
+                    <input type="text" name="" placeholder="Enter your review" id="">
+                    <input type="submit" value="Submit" class="btn">
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="row copyright">
+        <div class="footer-menu">
+            <a href="home.html">Home</a>
+            <a href="team.html">Team</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <p>Copyright &copy; 2024 QuickFlicks. All rights reserved.</p>
+    </div>
+
+    <!-- footer section end  -->
+
+
+    <!-- Bootstrap JS Bundle Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <script>
+        let searchForm = document.querySelector('.header .search-form');
+
+        document.querySelector('#search-btn').onclick = () => {
+            searchForm.classList.toggle('active');
+        }
+
+    </script>
+</body>
+
+</html>
